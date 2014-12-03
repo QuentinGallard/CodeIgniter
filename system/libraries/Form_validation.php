@@ -1085,6 +1085,22 @@ class CI_Form_validation {
 		return (bool) preg_match($regex, $str);
 	}
 
+
+    // --------------------------------------------------------------------
+
+    /**
+     * Equal
+     *
+     * @access	public
+     * @param $str
+     * @param $val
+     *
+     * @return bool
+     */
+    public function equal($str, $val){
+        return $str === $val;
+    }
+
 	// --------------------------------------------------------------------
 
 	/**
